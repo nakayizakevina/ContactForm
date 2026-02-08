@@ -1,0 +1,33 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color:hsl(148, 38%, 91%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 800px;
+    height:80%;
+    margin: 10px;
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+}
+
+h3{
+    font-size: 20px;
+}
+
+.client__ifo{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.client__name{
+    display:flex ;
+    flex-direction: column;
+}
