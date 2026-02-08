@@ -15,11 +15,11 @@
 
     <title>Frontend Mentor | Contact form</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
+    <!--Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  </style> 
   </head>
   <body>
     <main>
@@ -28,11 +28,11 @@
         <div class="client__ifo">
           <div class="client__name">
             <label for="">First Name</label>
-            <input type="text" class="client__input" id="first_name" required />
+            <input type="text" class="client__input client__input--name" id="first_name" required />
           </div>
           <div class="client__name">
             <label for=""> Last Name</label>
-            <input type="text" class="client__input id=" id="last_name" required />
+            <input type="text" class="client__input client__input--name"  id="last_name" required />
           </div>
         </div>
         <label for="">Email Address</label>
@@ -44,7 +44,7 @@
         />
         <div>
           <label>Query Type</label>
-          <div>
+          <div class="querry__input">
             <label>
               <input type="radio" name="queryType" value="general" />
               General Enquiry
