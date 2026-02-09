@@ -59,9 +59,10 @@
             placeholder="Please enter a valid email address"
             class="client__input"
             id="email"
-            
           />
-          <p class="email__error error__message" id="email__error">Please enter a valid email address</p>
+          <p class="email__error error__message" id="email__error">
+            Please enter a valid email address
+          </p>
         </div>
 
         <div>
@@ -79,16 +80,16 @@
           </div>
         </div>
         <div>
-           <label for="">Message</label>
-        <textarea
-          name=""
-          id=""
-          class="client__input client__input--state"
-          required
-        ></textarea>
-        <p class="error__message">This field is required</p>
+          <label for="">Message</label>
+          <textarea
+            name=""
+            id="message"
+            class="client__input client__input--state"
+            required
+          ></textarea>
+          <p class="error__message">This field is required</p>
         </div>
-       
+
         <label for="">
           <input type="checkbox" />
           I conset to being contacted by the team
@@ -96,10 +97,14 @@
         <p>To submit this form, please consent to being contacted</p>
         <button type="submit" id="button">Submit</button>
       </form>
+      <div class="user__infor">
+        <h3>Preview</h3>
+        <p>First Name: <span id="firstNamePreview"></span></p>
+        <p>Last Name: <span id="lastNamePreview"></span></p>
+        <p>Email: <span id="emailPreview"></span></p>
+        <textarea name="" id="messagePreview"></textarea>
+      </div>
     </main>
-
-    <!-- Message Sent! -->
-    <!-- Thanks for completing the form. We'll be in touch soon! -->
 
     <div class="attribution">
       Challenge by
