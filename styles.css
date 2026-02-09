@@ -102,6 +102,15 @@ textarea.client__input {
   cursor: pointer;
 }
 
+.error__message{
+  font-size: smaller;
+  color:hsl(0, 66%, 54%) ;
+  display: none;
+}
+
+#email__error{
+  display: none;
+}
 
 
 

@@ -2,7 +2,9 @@ const Form = document.getElementById("form")
 const FirstName = document.getElementById("first_name");
 const LastName = document.getElementById("last_name");
 const Email = document.getElementById("email");
-const SubmitButton = document.getElementById("button");
+
+const EmailErrorState = document.getElementById("email__error")
+
 
 
 function UserNamePattern(username){
@@ -10,14 +12,13 @@ function UserNamePattern(username){
     return NamePattern.test(username);
 }
 
-
 function UserEmailPattern(useremail){
     const EmailPattern =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return EmailPattern.test(useremail);
 }
 
-Form.addEventListener("submit", function (event) {
-     event.preventDefault()
+Form.addEventListener("submit", function (e) {
+     e.preventDefault()
 
   const ValidFirstName= UserNamePattern(FirstName.value);
   const ValidLastName = UserNamePattern(LastName.value);
@@ -25,7 +26,18 @@ Form.addEventListener("submit", function (event) {
 
   if (ValidFirstName && ValidLastName && ValidEmail) {
     alert("Message Sent! Thanks for completing the form. We'll be in touch soon!");
-  } else {
-    alert("Please check your inputs and try again.");
-  }
+  } 
+  // else {
+  //   alert("Please check your inputs and try again.");
+  // }
 });
+
+function CheckEmailState(){
+  if(Email.value === ""){
+    console.log("please input something")
+    EmailErrorState.classList.add("error")
+
+  }
+}
+
+
